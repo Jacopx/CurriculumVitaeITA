@@ -1,0 +1,110 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                            % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Jacopo}{Nasi}
+\title{Curriculum Vitae}
+\address{Trivero}{Biella, Italia}
+\phone[mobile]{345 8365410}
+\email{jacopo.nasi@gmail.com}
+\homepage{jacoponasi.weebly.com}
+\extrainfo{
+  \href{https://github.com/Jacopx}{GitHub: Jacopx}\\
+  \href{https://www.linkedin.com/in/jacopo-nasi-2724472a/}{LinkedIn: Jacopo Nasi}
+}
+\photo[64pt][0.4pt]{picture}
+\quote{Informazioni}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Personali}
+\cvitem{Sesso}{Maschio}
+\cvitem{Data Nascita}{12 Aprile 1995}
+\cvitem{Luogo}{Biella}
+\cvitem{Cod. Fiscale}{NSAJCP95D12A859W}
+\cvitem{Residenza}{C.so Orbassano 85,\newline 10136, Torino, (TO)}
+
+\section{Istruzione}
+\cventry{2009 -- 2014}{Diploma}{I.I.S. "del Cossatese e Valle Strona"}{Valle Mosso}{}{Liceo Scientifico Tecnologico - Progetto Brocca}  % arguments 3 to 6 can be left empty
+\cventry{2014 -- OGGI}{Laurea}{Politecnico di Torino}{Torino}{}{Laurea in Ingegneria Informatica - Classe L-8 (DM270)}
+
+\section{Esperienze Lavorative}
+\cventry{2016 -- OGGI}{Automatic Control Engineer}{Team037 4WD-H}{Cambiano, Torino}{}{Team del Politecnico di Torino per lo sviluppo di un veicolo ibrido da rally partendo dalla storica Lancia 037. \newline{}%
+Esperienze Maturate:%
+\begin{itemize}%
+  \item Cooperazione tra differenti team
+  \item Sviluppo firmware per unità di controllo
+  \item Redazione di documenti
+\end{itemize}}
+\cventry{2012 -- OGGI}{Fotografo Freelance}{}{}{}{Fotografo naturalista e sportivo.}
+\cventry{2013 -- 2016}{Fotografo e Social}{Discoteca Corona}{Borgosesia, Vercelli}{}{Fotografo principale e gestore di social media.}
+\cventry{2009 -- 2016}{Responsabile Coordinatore}{Centro Estivo del Mortigliengo}{Strona, Biella}{}{Coordinatore e responsabile informatico di un gruppo di professionisti dell'animazione.\newline{}%
+Esperienze Maturate:%
+\begin{itemize}%
+\item Coordinazione e lavoro in gruppi numerosi
+\item Amministrazione economica e gestionale
+\item Sviluppo e mantenimento di piattaforme web
+\end{itemize}}
+
+\clearpage
+
+\section{Esperienze Formative}
+\cventry{Settembre 2012}{Vacanza Studio}{LAL}{Twickenham, London}{England}{Settimana di esperienza in Inghilterra con vita in famiglia e corsi di inglese con professori madre lingua.}
+\section{Lingue}
+\cvitemwithcomment{Italiano}{Madrelingua}{}
+\cvitemwithcomment{Inglese}{Certificazione IELTS 6.0}{Conseguimento: 22 Ottobre 2016}
+\cvitemwithcomment{Francese}{Conoscenza basilare}{}
+
+\section{Conoscenze Informatiche}
+\cvitem{Linguaggi}{C, MATLAB, Python, Java, SQL, Bash, AWK, LaTex}
+\cvitem{Web}{HTML, PHP}
+\cvitem{OS}{Linux, FreeBSD, macOS e Windows}
+\cvitem{IDE}{xCode, Eclipse, PyCharm}
+\cvitem{Grafica}{Adobe Photoshop e Lightroom}
+\cvitem{Testo}{Nano, Atom, SublimeText, Word}
+\cvitem{Hardware}{Arduino e assemblaggio computer}
+
+\section{Capacità e competenze}
+\cvitem{Sociali}{Sviluppo della personale figura sociale da fotografo con i mezzi di comunicazione più diffusi al momento. Ottima capacità di collaborazione e di guida in gruppo. Esperienza in team di lavoro maturata con il progetto 037 ed il gruppo di animazioni per 8 anni.}
+\cvitem{Organizzative}{Capacità di coordinazione, leadership e gestione economica di gruppi numerosi, grazie ad una prolungata esperienza come responsabile di un gruppo di Animazione con circa 60 animatori per la gestione di 250 bambini. Cooperazione in team con redazione di report giornalieri sui lavori svolti.}
+\cvitem{Tecniche}{Esperienza di sviluppo software in C (livello avanzato) maturata sia con attività ricreative, corsi universitari ed alcune esperienze professionali. Gestione ed installazione di server aziendali. Amministrazione di reti locali con configurazioni per accesso remoto. Utilizzo di strumentazione da laboratorio (elettronica) grazie ad esperienze con Arduino, corsi universitari e al progetto 037.}
+\cvitem{Artistiche}{Competenze fotografiche acquisite come autodidatta e corsi di specializzazione, maturando esperienze lavorative di alto livello partecipando ad eventi di calibro mondiale nel motorsport e negli sport estremi. Discreta esperienza a livello grafico, sia web che fotografico. Competenze musicali per studio in scuola di musica di basso elettrico e batteria per 4 anni.}
+\cvitem{Altro}{Amante della natura, in particolare della montagna, della cucina, della fotografia e tecnologia. Amante dello sport con particolare attenzione al motorsport su due e quattro ruote. Appassionato di ciclismo stradale ed off-road.}
+
+\section{Informazioni Extra}
+\cvlistitem{Patente B}
+\cvlistitem{Automunito}
+\cvlistitem{Irrefrenabile, molto appassionato e determinato}
+
+\section{Privacy}
+\makecvfooter{Autorizzo il trattamento dei dati personali contenuti nel mio curriculum vitae in base art. 13 del D. Lgs. 196/2003.}
+\end{document}
+
+
+%% end of file `template.tex'.
